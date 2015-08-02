@@ -32,8 +32,16 @@ class User < ActiveRecord::Base
     end
   end
 
-  def destroy
-    session[:user_id] = nil
-    redirect_to '/'
-  end
+  # def forgot_password
+  #   @user = User.find_by_email(params[:email])
+  #   random_password = Array.new(10.map{ (65 + rand(58)).chr }.join
+  #     @user.password = random_password
+  #     @user.save!
+  #     Mailer.create_and_deliver_password_change(@user, random_password)
+  #   end
+
+  # def destroy
+  #   session[:user_id] = nil
+  #   redirect_to '/'
+  # end
 end

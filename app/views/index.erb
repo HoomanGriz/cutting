@@ -1,38 +1,41 @@
+<h1><p>mirepoix</p></h1>
 <div class='container'>
-  <h1>mirepoix</h1>
-  Login
+
+  <table id='login'>
+    <!-- <th>Login</th> -->
   <form action="/session" method="post">
-    <label>Username: </label>
-    <input type="text" name="username" maxlength="30">
-    <label>Password: </label>
+    <tr><td><label>Username: </label>
+    <input type="text" name="username" maxlength="30"></td></tr>
+    <tr><td><label>Password: </label>
     <input type="password" name="password">
-    <input type="submit" value="Login">
+    <p>
+    <input type="submit" value="Login"></p></td></tr>
   </form>
+</table>
 </div>
 <div class='container'>
-  New User Registration
+
+  <table id='new_user'>
+  <tr><th>New User Registration</th></tr>
   <form action="/new" method="post">
-    <ul>
-    <li>
-    <label>Desired Username: </label>
-    <input type="text" name="username" placeholder="username" maxlength="30">
-    </li>
+    <tr><td><label>Desired Username: </label>
+    <input type="text" name="username" placeholder="username" maxlength="30"></td></tr>
 
-    <li>
-    <label>Set your password: </label>
+    <tr><td><label>Set your password: </label>
     <input type="password" name="password" placeholder="password">
-    </li>
+    </td></tr>
 
-    <label>Confirm Password: </label>
+    <tr><td><label>Confirm Password: </label>
     <input type="password" name="confirm_password" placeholder="Re-enter password">
-    <li>
-    <input type="submit" value="Register"></input></li>
-  </ul>
+    <li></td></tr>
+    <tr><td><input type="submit" value="Register"></input></td></tr>
   </form>
+</table>
+
   <% if @mismatch_error_message %>
-    <p><%= @mismatch_error_message %></p>
+    <p><%= p @mismatch_error_message %></p>
   <% end %>
   <% if @error_message %>
-    <p><%= @error_message %></p>
+    <p><%= p @error_message %></p>
   <% end %>
 </div>

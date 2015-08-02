@@ -5,10 +5,7 @@ end
 get '/home' do
   # if session[:user_id]
     @recipes = Recipe.all
-    # (params[:title], params[:ingredients], params[:directions])
 
-    # @list = @recipes.first
-    # @recipe = Re
     erb :home
   # else
   #   redirect '/'
@@ -25,6 +22,11 @@ get '/logout' do
   redirect '/'
 end
 
+# get '/session' do
+#   @user ||= User.find_by(username: params[:username])
+#   erb :index
+# end
+
 post '/session' do
   @user = User.find_by(username: params[:username])
   if @user.password == params[:password]
@@ -32,8 +34,8 @@ post '/session' do
     redirect '/home'
   else
     @error_message = "Your password did not match.  Please try again."
-    erb :index
   end
+  # erb :index
 end
 
 post '/new' do

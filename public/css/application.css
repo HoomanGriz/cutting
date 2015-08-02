@@ -1,0 +1,56 @@
+html {
+  width: 90%;
+  margin: auto;
+  background: url(mirepoix_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+h1 {
+  color: red;
+  font-size: 65px;
+  font-family: sans-serif;
+  /*font-weight: lighter;*/
+  text-align: center;
+  background-color: white;
+  /*background-color: #006600;*/
+  opacity: 0.5;
+  /*background-image: url("https://31.media.tumblr.com/3fe5c04fb2aa75a43d879a3ceecd3560/tumblr_mzeabo56lb1tod5ovo1_250.gif");*/
+
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+}
+h1 p {
+  /*font-weight: bold;*/
+  /*opacity: 2;*/
+}
+
+.container {
+  /*border: solid black;*/
+}
+
+#login {
+  float: right;
+  width: 20%;
+  /*margin-top: -80px;*/
+  margin-right:-40px;
+
+}
+
+label {
+  color: white;
+}
+
+#new_user {
+  float: right;
+  width: 20%;
+  /*margin-top: -80px;*/
+  margin-right:-230px;
+  margin-top: 190px;
+}
+#new_user tr th {
+  color: white;
+
+}
