@@ -13,7 +13,7 @@ h1 {
   color: red;
   font-size: 65px;
   font-family: sans-serif;
-  /*font-weight: lighter;*/
+  font-weight: lighter;
   text-align: center;
   background-color: white;
   /*background-color: #006600;*/
@@ -26,7 +26,11 @@ h1 p {
   /*font-weight: bold;*/
   /*opacity: 2;*/
 }
-
+h3 {
+  color: green;
+  font-weight: lighter;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .container {
   /*border: solid black;*/
 }
@@ -44,13 +48,45 @@ label {
 }
 
 #new_user {
-  float: right;
-  width: 20%;
-  /*margin-top: -80px;*/
-  margin-right:-230px;
-  margin-top: 190px;
+ width:50%;
+ height: 50%;
+ margin: 0 auto;
+ vertical-align: middle;
+ float: both;
+ /*background-image: url('board.jpg');*/
+ /*background-size: 400px 400px;*/
 }
 #new_user tr th {
   color: white;
+
+}
+
+#registration {
+  /*float: both;*/
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-left: 300px;
+
+}
+
+#recipe_titles {
+  color: green;
+  font-size: 24px;
+  font-weight: bolder;
+
+}
+
+#recipe_info {
+  color: white;
+}
+
+#quote {
+  color: white;
+  font-size: 36px;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-left: 300px;
+  margin-top: 120px;
+  width: 50%;
 
 }

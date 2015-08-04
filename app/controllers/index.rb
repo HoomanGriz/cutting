@@ -22,6 +22,10 @@ get '/logout' do
   redirect '/'
 end
 
+get '/new' do
+  erb :'/signup/signup'
+end
+
 # get '/session' do
 #   @user ||= User.find_by(username: params[:username])
 #   erb :index

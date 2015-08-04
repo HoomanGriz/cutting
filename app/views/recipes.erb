@@ -1,7 +1,8 @@
+<h1><%= @recipe.title %></h1>
 <div>
-  <h1><%= @recipe.title %></h1>
-  <p><h3>Ingredients: </h3>
-    <%= @recipe.ingredients %></p>
-  <p><h3> Directions: </h3>
-    <%= @recipe.directions %></p>
+
+  <p><h3 id='recipe_titles'>Ingredients: </h3>
+    <span id='recipe_info'><%= @recipe.ingredients %></span></p>
+  <p><h3 id='recipe_titles'> Directions: </h3>
+    <span id='recipe_info'><%= @recipe.directions %></span></p>
 </div>

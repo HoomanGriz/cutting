@@ -1,4 +1,4 @@
-<h1><p>mirepoix</p></h1>
+<h1><p>cuttingBoard</p></h1>
 <div class='container'>
 
   <table id='login'>
@@ -11,26 +11,12 @@
     <p>
     <input type="submit" value="Login"></p></td></tr>
   </form>
+  <tr><td><label>Sign In Above or </label></tr></td>
+  <tr><td><label><a href='/new'>Create a New Account</a></label></tr></td>
 </table>
 </div>
-<div class='container'>
 
-  <table id='new_user'>
-  <tr><th>New User Registration</th></tr>
-  <form action="/new" method="post">
-    <tr><td><label>Desired Username: </label>
-    <input type="text" name="username" placeholder="username" maxlength="30"></td></tr>
-
-    <tr><td><label>Set your password: </label>
-    <input type="password" name="password" placeholder="password">
-    </td></tr>
-
-    <tr><td><label>Confirm Password: </label>
-    <input type="password" name="confirm_password" placeholder="Re-enter password">
-    <li></td></tr>
-    <tr><td><input type="submit" value="Register"></input></td></tr>
-  </form>
-</table>
+<div id="quote"><p>"The only time to eat diet food is while you're waiting for the steak to cook." <p>-Julia Child</div>
 
   <% if @mismatch_error_message %>
     <p><%= p @mismatch_error_message %></p>

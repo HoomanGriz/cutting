@@ -5,9 +5,12 @@
 -Users can search through recipes and cooking tips
 -Recipes will have a title
 -Recipes will have a picture
+-Recipes will have ingredients
 -Recipes will have directions
 -Recipes will have reviews
 -Users can create recipes
--Users can create shopping listsj
+-Users can create shopping lists
 -Shopping Lists will have a title relative to the recipe
 -Shopping lists will list all ingredients and quantities
+-cutting board, mirepoix, charcuterie, roux, saffron, al dente
+-scrape culinarysoftware for terms page
