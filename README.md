@@ -28,3 +28,7 @@ We would love for you to help make the skeleton more awesome, There are three wa
 3. Code review an open pull request!
 
 Be prepared to give and receive specific, actionable, and kind feedback!
+=======
+This repo should be used to hold your phase 2, week 1 passion project.
+
+see more about [portfolio challenges and passion projects here](../../../phase-2-guide/blob/sf/portfolio_challenges.md)
