@@ -1,6 +1,33 @@
+
+<!-- <p class="board"></p> -->
+
+<h1>My Recipes</h1>
+
+  <div>
+    <ul class="NavBar">
+      <li><a href='/home'>Home</a></li></br>
+      <li><a href='/home'>My Recipes</a></li></br>
+      <li><a href='/recipes/new'>Create A Recipe</a></li>
+    </ul>
+  </div>
+
+ <!--  <h4 id="new-recipe">Create a new <a href="/recipes/new"> Recipe</a></h4> -->
+  <!-- <div class="create-recipe"></div> -->
+
 <div>
-  <h1>Recipe List</h1>
   <% @recipes.each do |recipe| %>
-  <p><a href="/recipes/<%= recipe.id %>"><%= recipe.title%></a></p>
+  <p><a class="recipe-list" href="/recipes/<%= recipe.id %>"><%= recipe.title%></a></p>
   <% end %>
 </div>
+<div>
+  <footer>
+    <table>
+      <tr id="footlogo">
+        <td><font size="35px">cuttingBoard</font>
+        </td>
+        <td id="footinfo">"here is the footer"</td>
+      </tr>
+    </table>
+  </footer>
+</div>
+

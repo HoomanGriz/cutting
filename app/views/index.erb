@@ -1,27 +1,33 @@
 <h1><p>cuttingBoard</p></h1>
-<div class='container'>
 
-  <table id='login'>
-    <!-- <th>Login</th> -->
-  <form action="/session" method="post">
+
+<div class='login'>
+  <table>
+  <form action='/home' method='post'>
     <tr><td><label>Username: </label>
-    <input type="text" name="username" maxlength="30"></td></tr>
-    <tr><td><label>Password: </label>
-    <input type="password" name="password">
+    <input id="login_box" type="text" name="username" maxlength="30"></td></tr>
+    <tr><td><label id="pw_box">Password: </label>
+    <input id="login_box" type="password" name="password">
     <p>
-    <input type="submit" value="Login"></p></td></tr>
+    <input id="button2" type="submit" value="Login"></p></td></tr>
   </form>
-  <tr><td><label>Sign In Above or </label></tr></td>
-  <tr><td><label><a href='/new'>Create a New Account</a></label></tr></td>
+  <tr><td><label id="signin">Sign In Above or </label></tr></td>
+  <tr><td><label id="signin"><a href='/new'>Create a New Account</a></label></tr></td>
 </table>
 </div>
 
 <div id="quote"><p>"The only time to eat diet food is while you're waiting for the steak to cook." <p>-Julia Child</div>
 
-  <% if @mismatch_error_message %>
-    <p><%= p @mismatch_error_message %></p>
-  <% end %>
-  <% if @error_message %>
-    <p><%= p @error_message %></p>
-  <% end %>
+
+</div>
+<div>
+  <footer>
+    <table>
+      <tr id="footlogo">
+        <td><font size="35px">cuttingBoard</font>
+        </td>
+        <td id="footinfo">"here is the footer"</td>
+      </tr>
+    </table>
+  </footer>
 </div>

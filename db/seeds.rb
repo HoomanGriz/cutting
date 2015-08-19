@@ -7,7 +7,7 @@ banh_mi = {
 
 linguini = {
   :title => "Linguini with Buttery Corn, Scallions, and Goat Cheese",
-  :ingredients => "Linguini, Salt, Unsalted Butter, Scallions, Balck Pepper, Corn, Parsley, Goat Cheese",
+  :ingredients => "Linguini, Salt, Unsalted Butter, Scallions, Black Pepper, Corn, Parsley, Goat Cheese",
   :directions => "Bring a large pot of salted water to a boil. Cook pasta according to package directions. Reserve 1 cup pasta water, then drain and return pasta to pot. Meanwhile, heat 2 tablespoons butter in a large skillet over medium heat. Add scallion whites and season with salt and pepper. Cook, stirring frequently, until scallions are just tender, 3 to 4 minutes. Add corn, tossing to coat, and cook until just tender, 2 to 3 minutes more. Add pasta, ½ cup pasta water, and remaining 2 tablespoons butter to pan and toss to combine. Add additional water to loosen the sauce, if necessary. Fold in scallion greens and parsley. Serve dolloped with goat cheese and topped with more parsley.",
   :recipe_list_id  => 1
 }
@@ -17,7 +17,9 @@ summer_meals = {
 }
 
 new_list = RecipeList.create(summer_meals)
-rec_one = Recipe.new(banh_mi)
-rec_one.save!
-rec_two = Recipe.new(linguini)
-rec_two.save!
+# rec_one =
+Recipe.create(banh_mi)
+# rec_one.save!
+# rec_two =
+Recipe.create(linguini)
+# rec_two.save!

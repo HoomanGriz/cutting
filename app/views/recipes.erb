@@ -1,8 +1,28 @@
 <h1><%= @recipe.title %></h1>
-<div>
 
+  <div>
+    <ul class="NavBar">
+      <li><a href='/home'>Home</a></li></br>
+      <li><a href='/home'>My Recipes</a></li></br>
+      <li><a href='/recipes/new'>Create A Recipe</a></li>
+    </ul>
+  </div>
+
+<div>
   <p><h3 id='recipe_titles'>Ingredients: </h3>
     <span id='recipe_info'><%= @recipe.ingredients %></span></p>
   <p><h3 id='recipe_titles'> Directions: </h3>
     <span id='recipe_info'><%= @recipe.directions %></span></p>
+</div>
+
+<div>
+  <footer>
+    <table>
+      <tr id="footlogo">
+        <td><font size="35px">cuttingBoard</font>
+        </td>
+        <td id="footinfo">"here is the footer"</td>
+      </tr>
+    </table>
+  </footer>
 </div>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- 
+
+  <!--
     normalize.css removes cross-browser differences in defaults, e.g.,
     differences in how form elements appear between Firefox and IE
     See: http://necolas.github.com/normalize.css/
@@ -15,9 +16,36 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>cuttingBoard</title>
 </head>
 <body>
+
+
+  <!-- <body>
+  <div class="ui menu">
+    <div class="header item">
+      Survey Gorilla
+    </div>
+    <a class="item" href="/">
+      Home
+    </a>
+    <#% if logged_in? %>
+      <a class="user item" href="/users/<#%= current_user.id %>/surveys">
+        <#%= current_user.name %>'s Surveys
+      </a>
+      <a class="logout item" href="/sessions/delete">
+        Logout
+      </a>
+    <#% else %>
+     <a class="login item" href="/sessions/new">
+      Login
+    </a>
+     <a class="signup item" href="/users/new">
+      Sign up -->
+    <!-- </a>
+     <#% end %>
+  </div> -->
   <%= yield %>
+
 </body>
 </html>

@@ -1,11 +1,15 @@
 require 'bcrypt'
 
 class User < ActiveRecord::Base
-  include BCrypt
+
   has_many :recipe_lists
+  include BCrypt
 
-  validates :username, uniqueness: true, presence: true
+  validates :username, presence: true
+  validates :password, presence: true
+  validates :email, presence: true
 
+# uniqueness: true,
 
   def password
     @password ||= Password.new(password_hash)
@@ -17,20 +21,20 @@ class User < ActiveRecord::Base
   end
 
 
-  def create
-    @user = User.new(params[:user])
-    @user.password = params[:password]
-    @user.save!
-  end
+  # def create
+  #   @user = User.new(params[:user])
+  #   @user.password = params[:password]
+  #   @user.save!
+  # end
 
-  def login
-    @user = User.find_by_email(params[:email])
-    if @user.password == params[:password]
-      give_token
-    else
-     redirect_to home_url
-    end
-  end
+  # def login
+  #   @user = User.find_by_email(params[:email])
+  #   if @user.password == params[:password]
+  #     give_token
+  #   else
+  #    redirect_to home_url
+  #   end
+  # end
 
   # def forgot_password
   #   @user = User.find_by_email(params[:email])
